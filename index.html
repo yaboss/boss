@@ -13,6 +13,35 @@
   <link href="css/style.css" rel="stylesheet" media="screen">
   <link href="color/default.css" rel="stylesheet" media="screen">
 
+  <style>
+    .button {
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 5px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+    }
+
+    .button2:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+  </style>
 
 
 </head>
@@ -40,7 +69,7 @@
           <li class="current"><a href="#Home">Home</a></li>
           <li><a href="#about">About Us </a></li>
 
-          <li><a href="#portfolio">Blog </a></li>
+          <li><a href="#blog">Blog </a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
@@ -51,18 +80,18 @@
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-    
+
     </ol>
-  
+
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="img/baru6.png" alt="Los Angeles"  style="width:auto; height:auto">
+        <img src="img/baru6.png" alt="Los Angeles" style="width:auto; height:auto">
       </div>
-  
-     
+
+
     </div>
-  
+
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="sr-only">Previous</span>
@@ -71,218 +100,255 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-   
-     
-    <!-- -->
 
-    <!-- Team -->
-    <section id="about" class="home-section bg-white" style="margin-top:-90px">
+
+  <!-- -->
+
+  <!-- Team -->
+  <section id="about" class="home-section bg-white" style="margin-top:-90px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+
+          <div class="section-heading">
+
+            <h3>Kami adalah Solusi</h3>
+            <div class="heading-line"></div>
+
+            <p>Semua orang dapat terhubung menghasilkan masa depan yang lebih baik</p>
+
+            <div class="container">
+
+                <div class="col-md-4 ">
+                  <div class="thumbnail">
+                    <a href="img/comic4.jpg" target="_blank">
+                      <img src="img/comic4.jpg" alt="Lights" style="width:1000px">
+                      <div class="caption">
+                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail border-0">
+                    <a href="img/comic4.jpg" target="_blank">
+                      <img src="img/comic4.jpg" alt="Nature" style="width:500px">
+                      <div class="caption">
+                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+  </section>
+
+  <section id="blog" class="home-section bg-white" style="margin-top:-150px">
+    <div class="section-heading">
+
+      <h3>BLOG</h3>
+      <div class="heading-line"></div>
+
+      <p>Blog dan berita terbaru tentang Yaboss</p>
+      <div class="col-sm-4 ">
+        <div class="thumbnail shadow-sm p-3 mb-5 bg-white rounded">
+          <img src="img/jkt.jpg" alt="Paris" width="600" height="300">
+          <p><strong>Yaboss Solusi pekerjaan lebih mudah</strong></p>
+          <p> pekerjaan dengan mudah</p>
+          <button class="button button2">Read More</button>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/jkt.jpg" alt="New York" width="600" height="300">
+          <p><strong>Yaboss Kehidupan sosial</strong></p>
+
+          <p>sosial</p>
+          <button class="button button2">Read More</button>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/jkt.jpg" alt="San Francisco" width="600" height="300">
+          <p><strong>Yaboss mendapat pekerjaan</strong></p>
+          <p>Indonesia dimudahkan dengan yaboss</p>
+          <button class="button button2">Read More</button>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+    <!-- Contact -->
+    <section id="contact" class="home-section bg-white" style="margin-top:100px" >
       <div class="container">
         <div class="row">
           <div class="col-md-offset-2 col-md-8">
-
             <div class="section-heading">
-                <div class="heading-line"></div>
+              <h3>Contact Us</h3>
+              <div class="heading-line"></div>
+            </div>
+          </div>
+        </div>
 
-              <h3>Kami adalah Solusi</h3>
-                <p>Semua orang dapat terhubung menghasilkan masa depan yang lebih baik</p>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <div id="sendmessage">Your message has been sed. Thank you!</div>
+            <div id="errormessage"></div>
 
-                <div class="container">
-
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="thumbnail">
-                        <a href="img/COMIC.jpg" target="_blank">
-                          <img src="img/COMIC.jpg" alt="Lights" style="width:500px">
-                          <div class="caption">
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="thumbnail">
-                        <a href="img/COMIC.jpg" target="_blank">
-                          <img src="img/COMIC.jpg" alt="Nature" style="width:500px">
-                          <div class="caption">
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-
-
-                  </div>
+            <form action="" method="post" class="form-horizontal contactForm" role="form">
+              <div class="col-md-offset-2 col-md-8">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
                 </div>
               </div>
 
-            </div>
+              <div class="col-md-offset-2 col-md-8">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="col-md-offset-2 col-md-8">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="col-md-offset-2 col-md-8">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+                  <button type="submit" class="btn btn-theme btn-lg btn-block">Send message</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <!-- Bottom widget -->
+    <section id="bottom-widget" class="home-section bg-white" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="contact-widget wow bounceInLeft">
+              <i class="fa fa-map-marker fa-4x"></i>
+              <h5>Main Office</h5>
+              <p>Sunset Road , Seminyak,Badung,Indonesia
+                <br />
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-widget wow bounceInUp">
+              <i class="fa fa-phone fa-4x"></i>
+              <h5>Call</h5>
+              <p>Jaime 0812312323123
+                <br>
 
-  <!-- Contact -->
-  <section id="contact" class="home-section bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h3>Contact Us</h3>
-            <div class="heading-line"></div>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-widget wow bounceInRight">
+              <i class="fa fa-envelope fa-4x"></i>
+              <h5>Email us</h5>
+              <p>info@yaboss.com
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mar-top30">
+          <div class="col-md-12">
+            <h5>We're on social networks</h5>
+            <ul class="social-network">
+              <li><a href="#">
+                  <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span></a>
+              </li>
+              <li><a href="#">
+                  <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
+                  </span></a>
+              </li>
+              <li><a href="#">
+                  <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span></a>
+              </li>
+              <li><a href="#">
+                  <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                  </span></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div id="sendmessage">Your message has been sed. Thank you!</div>
-          <div id="errormessage"></div>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; Yaboss. All rights reserved.</p>
+            <div class="credits">
 
-          <form action="" method="post" class="form-horizontal contactForm" role="form">
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
+              Development by Ya Boss Team</a>
             </div>
-
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-offset-2 col-md-8">
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-offset-2 col-md-8">
-                <button type="submit" class="btn btn-theme btn-lg btn-block">Send message</button>
-              </div>
-            </div>
-          </form>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Bottom widget -->
-  <section id="bottom-widget" class="home-section bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="contact-widget wow bounceInLeft">
-            <i class="fa fa-map-marker fa-4x"></i>
-            <h5>Main Office</h5>
-            <p>Sunset Road , Seminyak,Badung,Indonesia
-              <br />
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="contact-widget wow bounceInUp">
-            <i class="fa fa-phone fa-4x"></i>
-            <h5>Call</h5>
-            <p>Jaime 0812312323123
-              <br>
-
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="contact-widget wow bounceInRight">
-            <i class="fa fa-envelope fa-4x"></i>
-            <h5>Email us</h5>
-            <p>info@yaboss.com
-              <br />
-            </p>
           </div>
         </div>
       </div>
-      <div class="row mar-top30">
-        <div class="col-md-12">
-          <h5>We're on social networks</h5>
-          <ul class="social-network">
-            <li><a href="#">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span></a>
-            </li>
-            <li><a href="#">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
-                </span></a>
-            </li>
-            <li><a href="#">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span></a>
-            </li>
-            <li><a href="#">
-                <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-                </span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>Copyright &copy; Yaboss. All rights reserved.</p>
-          <div class="credits">
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-            Development by Ya Boss Team</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <!-- js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/mb.bgndGallery.js"></script>
+    <script src="js/mb.bgndGallery.effects.js"></script>
+    <script src="js/jquery.simple-text-rotator.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/stellar.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- js -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/mb.bgndGallery.js"></script>
-  <script src="js/mb.bgndGallery.effects.js"></script>
-  <script src="js/jquery.simple-text-rotator.min.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/stellar.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Custom Javascript File -->
-  <script src="js/custom.js"></script>
+    <!-- Template Custom Javascript File -->
+    <script src="js/custom.js"></script>
 
 </body>
 
