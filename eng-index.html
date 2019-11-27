@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet"
+        media="screen">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="color/default.css" rel="stylesheet" media="screen">
+
+    <style>
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 5px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .rata {
+                margin-right: -50px;
+
+            }
+
+            .rata {
+                font-size: 12pt;
+                color: black;
+                padding-left: 5pt;
+                left: 0;
+                top: 7pt;
+
+                font-family: National, Arial, sans-serif;
+                position: relative;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                .responsivegue {
+                    padding: 20px;
+                    margin-left: -30px;
+                    margin-right: 30px;
+                    margin-top: -60px;
+
+                }
+
+                @media only screen and (max-width: 1200px) {
+                    .responsivegue2 {
+                        padding: 20px;
+                        margin-left: -10px;
+                        margin-right: -70px;
+                        margin-top: -30px;
+                    }
+
+                    body.desktop {
+                        background-image: url("baru6.png");
+                    }
+
+                    .hero-bg {
+                        background-image: url("baru6.png");
+                        background-repeat: no-repeat;
+
+                        height: 100%;
+                        max-height: 468px;
+                        width: 100%;
+                        clear: both;
+                        position: absolute;
+                        margin-bottom: 200px;
+
+                        background: url('img/mobile.png') no-repeat center center;
+                        background-size: cover;
+
+                        @media (min-width:641px) and (max-width:1024px) {
+                            background: url('baru6.png') no-repeat center center;
+                            background-size: cover;
+                        }
+
+                        @media (min-width:1025px) and (max-width:1500px) {
+                            background: url('baru6.png') no-repeat center center;
+                            background-size: cover;
+                        }
+
+                        @media (min-width:1501px) {
+                            background: url('baru6.png') no-repeat center center;
+                            background-size: cover;
+                        }
+
+
+                    }
+
+
+
+                    .hero-content {
+                        position: relative;
+                        display: -webkit-box;
+                        display: -moz-box;
+                        display: -ms-box;
+                        display: box;
+                        -webkit-box-orient: vertical;
+                        -moz-box-orient: vertical;
+                        -ms-box-orient: vertical;
+                        box-orient: vertical;
+                        -webkit-box-pack: center;
+                        -moz-box-pack: center;
+                        -ms-box-pack: center;
+                        box-pack: center;
+                        height: 100%;
+                    }
+
+                    @media only screen and (max-width: 1200px) {
+                        .ngawahan {
+                            margin-top: 450px;
+
+                        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle nav</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Logo text or image -->
+                <a class="navbar-brand" href="index.html"> <img src="img/yaboss3.png"
+                        style="width:  150px; margin-top:-5px; margin-left:60px"></a>
+
+            </div>
+            <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us </a></li>
+                    <li><a href="#how">How Yaboss Works </a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#Services">Workers</a></li>
+                            <li><a href="#Services">Business</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Language
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Indonesia</a></li>
+                            <li><a href="eng-index.html">English</a></li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Slide -->
+    <picture>
+        <source media="(min-width: 1200px)" srcset="img/baru6.png">
+        <source media="(min-width: 100px)" srcset="img/background.png">
+        <img src="img/baru6.png" alt="a cute kitten" style="width:100%">
+    </picture>
+
+
+
+    <section id="home" class="home-section bg-white" style="margin-top:-175px">
+
+        <div class="hero-bg">
+
+            <div class="hero-content">
+
+            </div>
+        </div>
+        </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <!-- -->
+    <section>
+        <div class="ngawahan">
+            <div class="container" style="margin-top:-100px">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <video width="300px" height="240" controls autoplay>
+                            <source src="img/funnies1.mp4" type="video/mp4">
+                            <source src="img/funnies1.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+    <section id="about" class="home-section bg-white" style="margin-top:-100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+
+                    <div class="section-heading">
+                        <h3>Who we are</h3>
+
+                        <div class="heading-line"></div>
+                        <p>Revolutionizing the way you do business, introducing Yaboss, Bali’s first employmentnetwork
+                            app.Stay connected with the latest job updates in your area with Yaboss. Expertly
+                            matchingprofessionals to businesses seeking skilled workers for all aspects of life.There
+                            are no limits to your pursuits.There is a Yaboss for every one of you</p>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section id="blog" class="home-section bg-white" style="margin-top:-300px;" class="mx-auto d-block">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+
+                    <div class="section-heading">
+                        <div class="section-heading">
+
+                            <h3>Vision & Mission</h3>
+                            <div class="heading-line"></div>
+                            <p> Yaboss was originally created by a group of expatriates in Bali as a solution for
+                                businessowners to seek reliable employees in their particular fields, however, this soon
+                                extendedfrom the workplace to everyday lives. Yaboss goes beyond your standard 9-5 job
+                                search,opening up a whole new world of opportunities right at your fingertips.Whether
+                                you’re looking for a one time job, freelance work, part time or full time
+                                employment,Yaboss keeps you connected with all of the latest job updates in your area
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section id="blog" class="home-section bg-white" style="margin-top:-300px;">
+        <div class="container" style="margin-top:30px">
+            <div class="section-heading">
+
+                <h3>Name and Logo </h3>
+                <div class="heading-line"></div>
+                <div class="col-4">
+                    <figure>
+                        <img src="img/yaboss3.png" width="150px" class="mx-auto d-block" alt=""
+                            style="margin-left:-0px; margin-top:30px  ">
+                    </figure>
+                    <ul style="margin-left:-40px;  margin-top:50px">
+                        <p>Just like our app, we are in the business of keeping things simple, which is how thename
+                            Yaboss was born</li>
+                        </p>
+                </div>
+                <h3></h3>
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="container" style="margin-top:20px ">
+            <div class="col-4">
+                <figure>
+                    <img src="img/logobb.png" width="150px" class="mx-auto d-block" alt=""
+                        style="margin-left:-0px; margin-top:-30px">
+                </figure>
+                <ul style="margin-left:-40px;  margin-top:30px">
+                    <p>Greeting you with a friendly smile, the Yaboss logo signifies leadership within abusiness,
+                        providing solutions for job seekers. The mustache symbolizes life policies thatmust be applied
+                        to achieve these goals, the glasses represent a form of boundless loyaltybetween employer and
+                        employee and the friendly smile is the face of prosperity.
+                        Yaboss personifies our employers, providing motivation and guidance in each and everyworkplace
+                        </li>
+                    </p>
+            </div>
+            <h3></h3>
+
+
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="how" class="home-section bg-white" style="margin-top:-300px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="section-heading">
+                        <h3>How Yaboss Works</h3>
+                        <div class="heading-line"></div>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est
+                            laborum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="responsivegue">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="box-team wow bounceInUp" data-wow-delay="0.1s">
+                            <img src="img/new5.png" alt="" class="img-box img-responsive" />
+                            <div class="responsivegue2">
+                                <h4>Looking Employer</h4>
+                                <p>Crei un’offerta di lavoro inserendo la categoria delle persone che stai cercando,
+                                    distanza dalla tua
+                                    posizione, descrizione del lavoro etc etc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
+                        <div class="box-team wow bounceInUp">
+                            <img src="img/new4.png" alt="" class="img-box img-responsive" />
+                            <div class="responsivegue2">
+                                <h4>Looking Around </h4>
+                                <p>L’applicazione inva la tua proposta a tutti i lavoratori che soddisfano le tue
+                                    richieste
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
+                        <div class="box-team wow bounceInUp">
+                            <img src="img/new6.png" alt="" class="img-box img-responsive" />
+                            <div class="responsivegue2">
+                                <h4>Found Employer</h4>
+                                <p>Inviamo a te la lista della persone che hanno accettato la tua richiesta cosi che
+                                    puoi vedere il loro
+                                    profilo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
+                        <div class="box-team wow bounceInUp">
+                            <img src="img/new7.png" alt="" class="img-box img-responsive" />
+                            <div class="responsivegue2">
+                                <h4>Great Success</h4>
+                                <p>Una volta scelti i tuoi preferiti potrai aprire una chat con loro e alla fine
+                                    scegliere il tuo Yaboss
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+
+
+
+        <section id="Services" class="home-section bg-white" style="margin-top:-500px">
+            <div class="container">
+                <div class="row" style="margin-top:200px">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-heading">
+                            <h3>Services</h3>
+                            <div class="heading-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="" class="home-section bg-white" style="margin-top:-330px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-heading">
+                            <h5>Professionals/Employees/Job Seekers/Careers</h5>
+                            <p>Stop searching the endless web for employment, Yaboss is here to keep you connected
+                                withrelevant employers and job opportunities in your area at the touch of a button.With
+                                Yaboss, all you need is a smartphone, a quick sign up to our app and we will take careof
+                                the rest!Every time an employer posts a new job with your credentials you will be
+                                notified and arethen free to apply for the desired role.Once you have been selected for
+                                the position, you have the choice to accept or decline thejob offer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="" class="home-section bg-white" style="margin-top:-300px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-heading">
+                            <h5>Businesses/Employers
+                            </h5>
+                            <p>Having trouble finding qualified experts in your field? Maybe you are after a freelancer
+                                for aone time job? From part time and full time employment to photographers,
+                                babysitters,gardeners and more, Yaboss is here to help.All you need to do is post your
+                                job request to Yaboss and we will notify all of the qualifiedcandidates in your area.
+                                Applicants are prompted to apply for the desired role and from thereyou are free to
+                                select suitable applicants for the position.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="home-section bg-white" style="margin-top:-300px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-heading">
+                            <h3>Contact Us</h3>
+                            <div class="heading-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div id="sendmessage">Your message has been sed. Thank you!</div>
+                        <div id="errormessage"></div>
+
+                        <form action="" method="post" class="form-horizontal contactForm" role="form">
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" data-rule="minlen:4"
+                                        data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" data-rule="email"
+                                        data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="Subject" data-rule="minlen:4"
+                                        data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                        data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-8">
+                                    <button type="submit" class="btn btn-theme btn-lg btn-block">Send message</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+
+            <!-- Bottom widget -->
+            <section id="bottom-widget" class="home-section bg-white" style="margin-top:-200px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-widget wow bounceInLeft">
+                                <i class="fa fa-map-marker fa-4x"></i>
+                                <h5>Main Office</h5>
+                                <p>Sunset Road , Seminyak,Badung,Indonesia
+                                    <br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-widget wow bounceInUp">
+                                <i class="fa fa-phone fa-4x"></i>
+                                <h5>Call</h5>
+                                <p>Jaime 0812312323123
+                                    <br>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-widget wow bounceInRight">
+                                <i class="fa fa-envelope fa-4x"></i>
+                                <h5>Email us</h5>
+                                <p>info@yaboss.com
+                                    <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mar-top30">
+                        <div class="col-md-12">
+                            <h5>We're on social networks</h5>
+                            <ul class="social-network">
+                                <li><a href="#">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                        </span></a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
+                                        </span></a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span></a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                                        </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Copyright &copy; Yaboss. All rights reserved.</p>
+                            <div class="credits">
+
+                                Development by Ya Boss Teams</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+            <!-- js -->
+            <script src="js/jquery.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/wow.min.js"></script>
+            <script src="js/mb.bgndGallery.js"></script>
+            <script src="js/mb.bgndGallery.effects.js"></script>
+            <script src="js/jquery.simple-text-rotator.min.js"></script>
+            <script src="js/jquery.scrollTo.min.js"></script>
+            <script src="js/jquery.nav.js"></script>
+            <script src="js/modernizr.custom.js"></script>
+            <script src="js/grid.js"></script>
+            <script src="js/stellar.js"></script>
+            <!-- Contact Form JavaScript File -->
+            <script src="contactform/contactform.js"></script>
+
+            <!-- Template Custom Javascript File -->
+            <script src="js/custom.js"></script>
+
+</body>
+
+</html>
