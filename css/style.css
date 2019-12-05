@@ -547,7 +547,7 @@ Services
 .service .carousel-indicators li {
 	display: inline-block;
 	margin: 1px;
-	width: 45px;
+	width: 100px;
 	height: 5px;
 	border: none;
 	border-radius: 0px;
