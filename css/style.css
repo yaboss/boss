@@ -4,7 +4,196 @@
   Author: BootstrapMade.com
   Author URL: https://bootstrapmade.com
 */
+.button {
+	background-color: #4CAF50;
+	/* Green */
+	border: none;
+	color: white;
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
 
+.button2 {
+	background-color: white;
+	color: black;
+	border: 2px solid #008CBA;
+}
+
+.button2:hover {
+	background-color: #008CBA;
+	color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+	.rata {
+		margin-right: -50px;
+
+	}
+
+	.rata {
+		font-size: 12pt;
+		color: black;
+		padding-left: 5pt;
+		left: 0;
+		top: 7pt;
+
+		font-family: National, Arial, sans-serif;
+		position: relative;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		.responsivegue {
+			padding: 20px;
+			margin-left: -30px;
+			margin-right: 30px;
+			margin-top: -60px;
+
+		}
+
+		@media only screen and (max-width: 1200px) {
+			.responsivegue2 {
+				padding: 20px;
+				margin-left: -10px;
+				margin-right: -70px;
+				margin-top: -30px;
+				margin-bottom: -50px;
+			}
+
+			body.desktop {
+				background-image: url("baru6.png");
+			}
+
+			.hero-bg {
+				background-image: url("baru6.png");
+				background-repeat: no-repeat;
+
+				height: 100%;
+				max-height: 468px;
+				width: 100%;
+				clear: both;
+				position: absolute;
+				margin-bottom: 200px;
+
+				background: url('img/mobile.png') no-repeat center center;
+				background-size: cover;
+
+				@media (min-width:641px) and (max-width:1024px) {
+					background: url('baru6.png') no-repeat center center;
+					background-size: cover;
+				}
+
+				@media (min-width:1025px) and (max-width:1500px) {
+					background: url('baru6.png') no-repeat center center;
+					background-size: cover;
+				}
+
+				@media (min-width:1501px) {
+					background: url('baru6.png') no-repeat center center;
+					background-size: cover;
+				}
+
+
+			}
+
+
+
+			.hero-content {
+				position: relative;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-box;
+				display: box;
+				-webkit-box-orient: vertical;
+				-moz-box-orient: vertical;
+				-ms-box-orient: vertical;
+				box-orient: vertical;
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				-ms-box-pack: center;
+				box-pack: center;
+				height: 100%;
+			}
+
+			@media only screen and (max-width: 1200px) {
+				.ngawahan {
+					margin-top: 450px;
+
+				}
+
+				@media only screen and (max-width:600px) {
+					.icon-name {
+						padding: 100px;
+						margin-left: 200px;
+
+
+
+						margin-top: -100px;
+
+					}
+
+					.logo-name {
+
+						padding: 100px;
+						margin-left: -300px;
+						margin-top: 0px;
+
+					}
+
+					.paragraf-logo-name {
+						margin-left: -400px;
+						margin-top: 250px;
+						padding: -100px;
+					}
+
+					.logo-icon {
+						margin-top: -100px;
+
+					}
+				}
+
+				@media only screen and (max-width:600px) {
+					.img-rapi1 {
+						margin-top: -150px;
+						padding: 20px;
+						margin-left: 100px;
+						margin-bottom: -10px;
+						width: 70%;
+					}
+
+					.img-rapi2 {
+						padding: 20px;
+						margin-left: -50px;
+						margin-top: -365px;
+						width: 70%;
+						margin-bottom: -30px;
+					}
+
+					.beside-name {
+						padding: 20px;
+						margin-left: 20px;
+						margin-top: -200px;
+
+					}
+
+					.no-left-mobile {
+						font-display: text-center;
+					}
+
+					@media only screen and (max-width:1200px) {
+						.rapihkeun {
+							margin-top: 150px;
+						}
+
+
+					}
 /* ================================
 Imports
 ================================= */
