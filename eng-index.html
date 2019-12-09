@@ -12,8 +12,126 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="color/default.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+
 
     <style>
+        .full {
+            width: 100%;
+        }
+
+        .gap {
+            height: 30px;
+            width: 100%;
+            clear: both;
+            display: block;
+        }
+
+        .footer {
+            background: #002147;
+            height: auto;
+            padding-bottom: 30px;
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid #CCCCCC;
+            border-top: 1px solid #DDDDDD;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer img {
+            max-width: 100%;
+        }
+
+        .footer h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            padding: 40px 0 0px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .footer h4 {
+            color: white;
+            font-size: 2em;
+            font-weight: 600;
+            line-height: 38px;
+            padding: 40px 0 10px;
+            font-family: cursive;
+            font-weight: lighter
+        }
+
+        .footer ul {
+            font-size: 13px;
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+            margin-top: 0px;
+            color: #7F8C8D;
+            padding: 0 0 8px 0;
+        }
+
+        .email {
+            border-bottom: 3px solid #fff;
+        }
+
+        .footer ul li a {
+            padding: 0 0 12px 0;
+            display: block;
+        }
+
+        .footer a {
+            color: white;
+            font-weight: lighter;
+        }
+
+        .footer p {
+            color: white;
+            font-weight: lighter;
+            font-size:
+        }
+
+        .footer a:hover {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .supportLi h4 {
+            font-size: 20px;
+            font-weight: lighter;
+            line-height: normal;
+            margin-bottom: 0 !important;
+            padding-bottom: 0;
+        }
+
+        .bg-gray {
+            background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+            box-shadow: 0 1px 0 #B4B3B3;
+        }
+
+        }
+
+        .footer a {
+            color: #78828D
+        }
+
+        .footer-bottom {
+            margin-top: 2em;
+            border-top: 1px solid #DDDDDD;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .footer-bottom p.pull-left {
+            padding-top: 6px;
+            font-size: 0.75em
+        }
+
+
         .button {
             background-color: #4CAF50;
             /* Green */
@@ -84,7 +202,7 @@
                     .hero-bg {
                         background-image: url("baru6.png");
                         background-repeat: no-repeat;
-                        
+
                         height: 100%;
                         max-height: 468px;
                         width: 100%;
@@ -203,8 +321,47 @@
                                     margin-bottom: 400px;
                                 }
 
+                                .googlerapidikit1 {
+                                    margin-top: -300px;
+                                    margin-left: 10px;
+                                    padding: 50px;
+                                    width: 100%;
+
+                                }
+
+                                .googlerapidikit2 {
+                                    margin-top: -300px;
+                                    margin-left: 10px;
+                                    padding: 50px;
+                                    width: 95%;
+
+                                }
+
 
                             }
+
+                            @media only screen and (min-width: 600px) {
+
+
+                                .cip-footer {
+                                    padding: 40px;
+                                    margin-left: -300px;
+                                    width: 20px;
+
+                                    .footer-left {
+                                        margin-top: 100px;
+                                    }
+
+
+                                }
+
+
+
+                                @media only screen and (min-width: 600px) {
+
+                                    .social-mobile {
+                                        margin-top: -400px;
+                                    }
     </style>
 
 
@@ -230,15 +387,15 @@
             </div>
             <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="current"><a href="#visi">Home</a></li>
-                    <li><a href="#visi">About Us </a></li>
+                    <li class="current"><a href="#visi">Beranda</a></li>
+                    <li><a href="#visi">Tentang Kami </a></li>
 
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">How Yaboss Works
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bagaimana Yaboss Bekerja
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#worker">Hire a worker</a></li>
-                            <li><a href="#find">Find a job</a></li>
+                            <li><a href="#worker">Mencari Pekerja</a></li>
+                            <li><a href="#find">Mencari Pekerjaan</a></li>
 
                         </ul>
 
@@ -248,7 +405,7 @@
 
 
 
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#contact">Kontak Kami</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Language
                             <span class="caret"></span></a>
@@ -296,20 +453,22 @@
     <section id="visi" class="home-section bg-white" style="margin-top:-300px">
         <div class="container" style="margin-top:-30px ">
             <div class="col-4">
-                <h3>Who We Are </h3>
+                <h3>Siapa Kita </h3>
 
                 <ul style="margin-left:-40px;  margin-top:0px">
                     <div class="box-team" data-wow-delay="0.1s">
 
-                    <p>Revolutionizing the way you do business, introducing Yaboss, Indonesia’s first employment network
-                        app.
-                        Stay connected with the latest job updates in your area with Yaboss. Strategically matching
-                        individuals and businesses with skilled workers for all aspects of life.
-                        There are no limits to your pursuits.
-                        There is a Yaboss for every one of you.
-</div>
+                        <p>Merevolusi cara anda melakukan bisnis, memperkenalkan yaboss, aplikasi jaringan kerja yang
+                            pertama diindonesia.
+                            Tetap terkoneksi dengan pembaharuan pekerjaan yang terbaru di area anda dengan Yaboss.
+                            Secara setrategis mempertemukan individu dan bisnis dengan kemampuan pekerja dalam semua
+                            aspek kehidupan.
 
-                        </li>
+                            Tidak ada batasan dalam pencarian anda.
+                            Ada yaboss untuk kalian semua.
+                    </div>
+
+                    </li>
                     </p>
             </div>
             <h3></h3>
@@ -322,19 +481,20 @@
         <div class="container" style="margin-top:0px ">
 
             <div class="col-4">
-                <h3>Vision & Mission </h3>
+                <h3>Visi & Misi </h3>
 
                 <ul style="margin-left:-40px;  margin-top:30px">
                     <div class="box-team" data-wow-delay="0.1s">
 
-                    <p>Yaboss was originally created by a group of expatriates in Bali as a solution for business owners
-                        to seek reliable employees in their particular fields, however, this soon extended from the
-                        workplace to everyday lives. Yaboss goes beyond your standard 9-5 job search, opening up a whole
-                        new world of opportunities right at your fingertips.
-                        Whether you’re looking for a one time job, freelance work, part time or full time employment,
-                        Yaboss keeps you connected with all of the latest job updates in your area.
-</div>
-                        </li>
+                        <p>Yaboss awalnya diciptakan oleh grup ekspatriat di bali sebagai solusi bagi pemilik bisnis
+                            untuk mencari kandidat karyawan yang dapat diandalkan pada bidang keahlian mereka, namun,
+                            ini mulai meluas ke dalam kehidupan sehari – hari. Yaboss melampaui standar pencarian
+                            pekerjaan anda, membuka peluang baru tepat diujung jari anda.
+                            Anda dapat mencari pekerjaan perjam, pekerjaan lepas, pekerjaan paruh waktu atau pekerjaan
+                            purna waktu, Yaboss membuat anda tetap terhubung dengan semua pembaruan pekerjaan yang
+                            terbaru di daerah anda.
+                    </div>
+                    </li>
                     </p>
             </div>
             <h3></h3>
@@ -351,12 +511,12 @@
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
                     <div class="section-heading">
-                        <h3>How Yaboss Works</h3>
+                        <h3>Bagaimana Yaboss Bekerja</h3>
                         <div class="heading-line"></div>
-                        <h6 style="margin-top:30px">Hire a Worker </h6>
-                        <p>Having trouble finding qualified experts in your field? Maybe you are after a freelancer for
-                            a one time job? From part time and full time employment to photographers, babysitters,
-                            gardeners and more, Yaboss is here to help.
+                        <h6 style="margin-top:30px">Mencari Pekerja </h6>
+                        <p>Kesulitan menemukan ahli yang berkualitas di bidang Anda? Mungkin Anda mencari pekerja lepas
+                            untuk pekerjaan perjam? Dari pekerjaan paruh waktu dan purna waktu hingga fotografer,
+                            pengasuh bayi, tukang kebun, dan masih banyak lagi, Yaboss hadir untuk membantu.
                         </p>
                     </div>
                 </div>
@@ -365,34 +525,35 @@
                 <div class="responsivegue">
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                         <div class="box-team" data-wow-delay="0.1s">
-                            <img src="img/english/CHEF STORY EN 1.png" alt="" class="img-box img-responsive" />
+                            <img src="img/indonesia/CHEF STORY IN 1.png" alt="" class="img-box img-responsive" />
                             <div class="responsivegue2">
-                                <p>all you need to do is post your job request to Yaboss </p>
+                                <p>Yang perlu anda lakukan adalah hanya mengirim permintaan pekerjaan ke Yaboss </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
                         <div class="box-team" data-wow-delay="0.1s">
-                            <img src="img/english/CHEF STORY EN 2.png" alt="" class="img-box img-responsive" />
+                            <img src="img/indonesia/CHEF STORY IN 2.png" alt="" class="img-box img-responsive" />
                             <div class="responsivegue2">
-                                <p> we will notify all of the qualified candidates in your area
+                                <p> dan kami akan menotifikasi ke semua kandidat yang memenuhi syarat di area terdekat
+                                    anda
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
                         <div class="box-team" data-wow-delay="0.1s">
-                            <img src="img/english/CHEF STORY EN 3.png" alt="" class="img-box img-responsive" />
+                            <img src="img/indonesia/CHEF STORY IN 3.png" alt="" class="img-box img-responsive" />
                             <div class="responsivegue2">
-                                <p>applicants are prompted to apply for the desired role</p>
+                                <p>pelamar diminta untuk memilih pekerjaan yang diinginkan</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
-                        <div class="box-team " data-wow-delay="0.1s">
-                            <img src="img/english/CHEF STORY EN 4.png" alt="" class="img-box img-responsive" />
+                        <div class="box-team" data-wow-delay="0.1s">
+                            <img src="img/indonesia/CHEF STORY IN 4.png" alt="" class="img-box img-responsive" />
                             <div class="responsivegue2">
-                                <p>you are free to select suitable applicants for the position
+                                <p>anda bebas untuk memilih pelamar yang sesuai dengan posisi yang telah ada
                                 </p>
                             </div>
                         </div>
@@ -409,9 +570,10 @@
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
                     <div class="section-heading">
-                        <h6 style="margin-top:60px">Find a Job </h6>
-                        <p>Stop searching the endless web for employment! Yaboss is here to keep you connected with
-                            relevant employers and job opportunities in your area at the touch of a button.</p>
+                        <h6 style="margin-top:60px">Mencari Pekerjaan </h6>
+                        <p>Hentikan mencari pekerjaan di web tanpa akhir! Yaboss ada disini untuk membuat Anda tetap
+                            terhubung dengan pengusaha dan peluang kerja yang relevan di daerah anda dengan satu
+                            sentuhan tombol.</p>
                     </div>
                 </div>
             </div>
@@ -419,35 +581,37 @@
                 <div class="responsivegue">
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                         <div class="box-team" data-wow-delay="0.1s">
-                            <img src="img/english/GARDENER STORY EN 1.png" alt="" class="img-box img-responsive" />
+                            <img src="img/indonesia/GARDENER STORY ID 1.png" alt="" class="img-box img-responsive" />
                             <div class="responsivegue2">
-                                <p> all you need is a smartphone, a quick sign up to our app</p>
+                                <p> bersama Yaboss, yang anda butuhkan hanyalah smartphone, daftar cepat di aplikasi
+                                    kami dan kami akan menangani proses selanjutnya!</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
                         <div class="box-team" data-wow-delay="0.1s">
-                            <img src="img/english/GARDENER STORY EN 2.png" alt="" class="img-box img-responsive" />
+                            <img src="img/indonesia/GARDENER STORY ID 2.png" alt="" class="img-box img-responsive" />
                             <div class="responsivegue2">
-                                <p>every time an employer posts a new job with your credentials you will be notified
+                                <p>setiap kali majikan memposting tawaran pekerjaan yang baru dengan kredensial anda,
+                                    anda akan diberi notifikasi
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
                         <div class="box-team" data-wow-delay="0.1s">
-                            <img src="img/english/GARDENER STORY EN 3.png" alt="" class="img-box img-responsive" />
+                            <img src="img/indonesia/GARDENER STORY ID 3.png" alt="" class="img-box img-responsive" />
                             <div class="responsivegue2">
-                                <p>you are free to accept or deny the role</p>
+                                <p>dan kemudian anda bebas menerima atau menolak peran tersebut</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
                         <div class="box-team" data-wow-delay="0.1s">
-                            <img src="img/english/GARDENER STORY EN 4.png" alt="" class="img-box img-responsive" />
+                            <img src="img/indonesia/GARDENER STORY ID 4.png" alt="" class="img-box img-responsive" />
                             <div class="responsivegue2">
-                                <p>once you have accepted the offer, is it then up to the employer to choose which
-                                    applicaticant they would like to hire for the position</p>
+                                <p>setelah anda menerima tawaran itu, kemudian kembali pada majikan untuk memilih
+                                    pelamar mana yang sesui dengan posisi yang ada</p>
                                 </p>
                             </div>
                         </div>
@@ -683,6 +847,15 @@
 
 
 
+
+
+
+
+        <div class="container" style="margin-top:-40px">
+            <p class="footer-company-about" style="margin-top:50px">
+                <p>Copyright @ Yaboss 2019</p>
+            </p>
+        </div>
 
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
