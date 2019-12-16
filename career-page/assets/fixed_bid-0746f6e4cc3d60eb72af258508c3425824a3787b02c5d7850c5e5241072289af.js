@@ -1,1 +1,0 @@
-$("a[id^='demo']").animatedModal({animatedIn:"zoomIn",animatedOut:"zoomOut",color:"#ffffff"}),$("a[id^='demo']").click(function(){var t=($(this).attr("id").substring(4),$(this).parent().attr("data"));$("span.job-title").text(t),$("#career_form_position").val(t)});
