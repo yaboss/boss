@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.wgs.co.id/case_study/drawing-management-system-for-heavy-military-equipment-manufacturer by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 03:05:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c66b9c2997","applicationID":"196852246","transactionName":"e11fQxMNCA4HFhsHWUtXbkQVFwALBxcbF1BXRQ==","queueTime":0,"applicationTime":1113,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"c66b9c2997",applicationID:"196852246"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Komatsu: Drawing Management System for Heavy Equipment Manufacturer</title>
+<meta name="description" content="The Drawing Management System (DMS) helps the company to organize, display, manage (search and save) giant amount of data while protecting their blueprint" />
+<meta name="keywords" content="drawing management system, military equipment manufacturer, document management system" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<link href='http://wgshub.co.id/' hreflang='id' rel='alternate'>
+<link rel="shortcut icon" type="image/x-icon" href="../assets/favicon-4d77e03290e2385b7235e68c3a73cfa1ebfdd16392e4ff97a8361352ea6cf996.ico" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="JZYyPIEb/7xKjD4frZVkq3ZYcfVT0vsGHJaHFBdKoW0BGLSp+2gjGwAvABX7pXLVm6j+NQxHL95pJ1n33aSnGQ==" />
+<link rel="stylesheet" media="all" href="../assets/font-awesome.min-149da43505d4a0bab3b6710d0ff86acd23d9a18e6907747c759cf8b6d967c2a3.css" />
+<link rel="stylesheet" media="all" href="../assets/jquery.fullPage-4bb2d232ae3be4726dcfa2a1883d801d780274f43284328a2d55f27ac88047c7.css" />
+<link rel="stylesheet" media="all" href="../assets/bootstrap-fbc36aa20585a190543ba1ee411ee48b75f462ca3cb92fb97f286a235e58cda3.css" />
+<link rel="stylesheet" media="all" href="../assets/animate-82457b578e5733e758467dfa20c0fcc9080eedaeee33e54c0ab990cdd4fc65ff.css" />
+<link rel="stylesheet" media="all" href="../assets/app-2499d5764e07817104ea9b0b7f65277589c2ecde7723a0437550e84613019c6d.css" />
+<link rel="stylesheet" media="screen" href="../assets/mobile-8de5b3d6971bbc5a922f099632564846de7936ee1ccb970f19ec67b9c732ea0c.css" />
+<script>
+  var verifyCallback = function(response) {
+    alert(response);
+  };
+  var widgetId1;
+  var widgetId2;
+  var onloadCallback = function() {
+    widgetId1 = grecaptcha.render('captcha-contact', {
+      'sitekey' : "6LeaHhQTAAAAAL8TqqLUlWS2T8xsLR_kNtm3vkCp"
+    });
+    widgetId2 = grecaptcha.render('captcha-contact2', {
+      'sitekey' : "6LeaHhQTAAAAAL8TqqLUlWS2T8xsLR_kNtm3vkCp"
+    });
+  };
+</script>
+
+<link rel="stylesheet" media="all" href="../assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+<script src="../assets/application-621d42acc022fcbdf3cee7476f795622db63b6004acdc2f4e0a242cc1802b729.js"></script>
+<script type='application/ld+json'>
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "http://www.wgs.co.id",
+"logo": "http://www.wgs.co.id/assets/wgs_logo.png"
+}
+</script>
+<script type='application/ld+json'>
+{
+"@context" : "http://schema.org",
+"@type" : "Organization",
+"name" : "WGS",
+"url" : "http://www.wgs.co.id",
+"sameAs" : [
+"https://www.facebook.com/ptwgs",
+"http://twitter.com/ptwgs",
+"http://www.linkedin.com/company/pt-walden-global-services"
+]
+}
+</script>
+<!-- Facebook Pixel Code -->
+<!-- End Facebook Pixel Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-53149145-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body>
+<div class='side-subscribe'>
+<div class='side-top'>
+What’s New With WGS
+<a class='closed desktop' href='javascript:void(0)'>
+<i class='fa fa-minus'></i>
+</a>
+<a class='closed mobile-tab' href='javascript:void(0)'>
+<i class='fa fa-remove'></i>
+</a>
+<a class='opened' href='javascript:void(0)'>
+<i class='fa fa-chevron-up'></i>
+</a>
+</div>
+<div class='side-content'>
+<form action='http://wgs.us13.list-manage.com/subscribe/post?u=bb0967f17fd19295fef21348d&amp;amp;id=eea754e0b2' id='form_newslatter' method='post' name='mc-embedded-subscribe-form' novalidate='' target='_tab'>
+<input name='nr' type='hidden' value='widget'>
+<input id='email_subscribe' name='EMAIL' placeholder='Your Email Address' type='email' value=''>
+<button class='btn' name='subscribe' type='submit'>Follow</button>
+</form>
+<a class='latest-news clearfix' href='https://blog.wgs.co.id/2019/09/what-is-customer-intelligence/' target='_blank'>
+<div class='col-md-4'>
+<img alt="image" class="img-news" src="../../blog.wgs.co.id/wp-content/uploads/2019/09/cellphone-1852898_1280-640x427.jpg">
+</div>
+<div class='col-md-8'>
+<h2>
+What is Customer Intelligence?
+</h2>
+<p>Customers these days prefer to share data concerning t...</p>
+</div>
+</a>
+<div class='social-follow'>
+<p>Follow us on social media</p>
+<p class='social'>
+<a href='https://www.facebook.com/ptwgs' target='_blank'>
+<i class='fa fa-facebook'></i>
+</a>
+<a href='http://twitter.com/ptwgs' target='_blank'>
+<i class='fa fa-twitter'></i>
+</a>
+<a href='http://www.linkedin.com/company/pt-walden-global-services' target='_blank'>
+<i class='fa fa-linkedin'></i>
+</a>
+</p>
+</div>
+</div>
+</div>
+
+<body>
+<!-- = session[:recently] -->
+<div class='wrapper intro-effect-push' id='wrapper'>
+<div class='menu-mobile'>
+<div class='logo pull-left'>
+<a href='../index.html'>
+<img alt='enterprise solution' src='../assets/logo/WGS-logo.png'>
+</a>
+</div>
+<div class='menu-fixed pull-right'>
+<button id='nav-icon2' type='button'>
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+
+<div class='inside service case-studies' id='section-hero'>
+<div class='container-detail'>
+<div class='row'>
+<div class='top-head'>
+<div class='logo pull-left'>
+<a href='../index.html'>
+<img alt='enterprise solutions' src='../assets/logo/WGS-logo.png'>
+</a>
+</div>
+<div class='mobile-nav-icon'>
+<i class='fa fa-bars'></i>
+</div>
+
+</div>
+</div>
+</div>
+<div class='case-studies-detail clearfix'>
+<div class='slider-work'>
+<div class='carousel slide' data-ride='carousel' id='carousel-example-generic'>
+<ol class='carousel-indicators'>
+<li class='active' data-slide-to='0' data-target='#carousel-example-generic'></li>
+</ol>
+<div class='carousel-inner' role='listbox'>
+<div class='item active'>
+<img alt='drawing-management-system-for-heavy-military-equipment-manufacturer' src='../../wgs-fusion.s3.amazonaws.com/uploads/case_study_gallery/url/415/ss_18488b4a21.jpg'>
+</div>
+</div>
+</div>
+</div>
+<div class='content-side-work'>
+<a class="btn btn-inline" href="../case_studies9ba9.html?page=3"><i class='fa fa-chevron-circle-left' aria-hidden='true'></i> Back</a>
+<div class='breadcrumb-back'>
+<a href='../index.html#works'>Home</a>
+&raquo;
+<a href='../case_studies.html'>Solutions</a>
+&raquo;
+Komatsu: Drawing Management System for Heavy Equipment Manufacturer
+</div>
+<h2>
+Komatsu: Drawing Management System for Heavy Equipment Manufacturer
+</h2>
+<p>
+Solution: Operations
+<br>
+Industry: Automotive Manufacturing
+<br>
+Company: Komatsu
+</p>
+<div class='big-para'>
+<p style="text-align: justify;">Organizations today operate business in a very competitive way. Their response to consumer inquiries need to be quicker and more accurately. An important key to aptly service the customers is by having a highly organized and efficient document management system. A large company with multiple locations across the globe should have an organizational structure to protect their project names, image, document files, and other important documents in a secure system yet still easy to locate and access.</p>
+
+<p style="text-align: justify;">This is an application designed for Komatsu, a multinational corporation that manufactures construction, mining, forestry, and agro equipments. The Drawing Management System (DMS) helps the company to organize, display, manage (search and save) giant amount of data while protecting their blueprint and other important images.</p>
+
+<p style="text-align: justify;">They asked WGS to develop a supportive management system for an effective file storage process of business operational activities. When the DMS application is active, other applications are automatically inaccessible. WGS developed the desktop based application on top of C#, Oracle DB and Winform. On the front-end, the application uses HTML5/CSS3.</p>
+
+<p>Here are a few from many features in the application, as follows:</p>
+
+<ol>
+	<li>Login<br />
+	Users must have a secure ID and password with authorization to access the application.</li>
+	<li value="2">Search Menu<br />
+	Users can search multiple files at the same time.</li>
+	<li value="3">Upload Menu<br />
+	This feature allows user to upload multiple files at the same time.</li>
+	<li value="4">Administrator<br />
+	This feature allows admin to manage user priviledge and block unauthorized access to drawing database.</li>
+	<li value="5">Activity Report<br />
+	All user activities such as changing password or printing data are completely recorded in the application.</li>
+</ol>
+
+<p style="text-align: justify;">The best feature of the application is the document access and protection. Every data displayed can only be accessed from the application. The data can not be saved or print screened in any way without authorization.</p>
+
+<p style="text-align: justify;">There are five (5) user levels with different roles in the application, as follows:</p>
+
+<ol>
+	<li>Admin<br />
+	Admin has a password where he can modify data and user.</li>
+	<li value="2">Data Manager with access to upload files<br />
+	This role can upload data as well as modifying data and has a priviledge to full print access.</li>
+	<li value="3">Data User with full access<br />
+	This role allows user to full print access only.</li>
+	<li value="4">Data user with limited access<br />
+	User with this access can only print data with reference.</li>
+	<li value="5">Data user with reference.<br />
+	This role has the lowest authoriization where he can only view the display data.</li>
+</ol>
+
+</div>
+<h4>Technical Specification:</h4>
+<ul class='case-learn'>
+<li>
+<span>
+Database
+</span>
+</li>
+- Oracle
+<br>
+<li>
+<span>
+Operating System (OS)
+</span>
+</li>
+- Windows Server
+<br>
+<li>
+<span>
+3rd Party Engine
+</span>
+</li>
+- XSSme
+<br>
+<li>
+<span>
+Markup Language
+</span>
+</li>
+- CSS 3
+<br>
+- HTML 5
+<br>
+<li>
+<span>
+Integrated Development Environment
+</span>
+</li>
+- Microsoft Visual Studio
+<br>
+<li>
+<span>
+Programming Language
+</span>
+</li>
+- C#
+<br>
+- Javascript
+<br>
+</ul>
+<br>
+<ul class='case-learn'>
+<li>
+<span>
+Business Issue:
+</span>
+A company needs an application that is designed to avoid disorganized data and make every tasks related to the management of documentation faster, easier and efficient. 
+</li>
+<li>
+<span>
+Business Solution:
+</span>
+Drawing Management Software (DMS) is a way company can store, track and share image documents in one central location through an online system among employees throughout the organization.
+</li>
+<li>
+<span>
+Benefits:
+</span>
+Users no longer have to worry about the possibility of losing important documents with this application as it electronically stores, organizes, and manages business documents through a fast and secure access throughout the company.
+</li>
+<li>
+<span>
+Lesson Learned:
+</span>
+The application has enabled things such as protecting data and files become easier since the tool allows the information to be stored securely on database that increase data efficiency and safety.
+</li>
+</ul>
+</div>
+<div class='call-action-contact'>
+<h3>
+Whether you need assistance for the whole software implementation process or just one particular service, we are ready to contribute.
+</h3>
+<btn class='btn-cta btn btn-outline' href='#'>contact us to order up!</btn>
+</div>
+</div>
+<div id='section-heroes'>
+<div class='container'>
+<div class='row'>
+<div class='top-head'>
+<div class='logo pull-left'>
+<a href='../index.html'>
+<img alt='enterprise solutions' src='../assets/logo/WGS-logo.png'>
+</a>
+</div>
+<div class='mobile-nav-icon'>
+<i class='fa fa-bars'></i>
+</div>
+</div>
+<div id='menu_icon'>
+<div class='wcircle-icon'>
+<div>
+<div class='open' id='nav-icon1'>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+<div class='wcircle-menu' style='display:none;'>
+<div class='wcircle-menu-item'>
+<a href="../about.html">About</a>
+<i class='fa fa-genderless'></i>
+</div>
+<div class='wcircle-menu-item'>
+<a target="_blank" href="http://blog.wgs.co.id/">Blog</a>
+<i class='fa fa-genderless'></i>
+</div>
+<!-- .wcircle-menu-item -->
+<!-- %a#contact-menu{:href => "javascript:void(0)"} Contact -->
+<!-- %i.fa.fa-genderless -->
+<!-- .wcircle-menu-item -->
+<!-- = link_to 'Career', career_index_path -->
+<!-- %i.fa.fa-genderless -->
+<div class='wcircle-menu-item'>
+<a href='javascript:void(0)' id='contact-menu'>Contact</a>
+<i class='fa fa-genderless'></i>
+</div>
+<div class='wcircle-menu-item'>
+<a href="../services.html">Services</a>
+<i class='fa fa-genderless'></i>
+</div>
+<!-- .wcircle-menu-item -->
+<!-- = link_to "Products", 'http://wgshub.com' -->
+<!-- %i.fa.fa-genderless -->
+<div class='wcircle-menu-item'>
+<a href="../case_studies.html">Portfolios</a>
+<i class='fa fa-genderless'></i>
+</div>
+<div class='wcircle-menu-item active'>
+<a href="../index.html">Home</a>
+<i class='fa fa-genderless'></i>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class='mobile-new affix-top' id='nav-new'>
+<a class='close-mobile' href='javascript:void(0)'>
+<i class='fa fa-remove'></i>
+</a>
+<div class='navbar navbar-default navbar-static'>
+<div class='container'>
+<ul>
+<li>
+<a href='../index.html'>Home</a>
+</li>
+<li>
+<a href='../case_studies.html'>Portfolios</a>
+</li>
+<li>
+<a href='../services.html'>Services</a>
+</li>
+<li>
+<a href='javascript:void(0)' id='go-to-contact'>Contact</a>
+</li>
+<li>
+<a href='http://blog.wgs.co.id/' target='_blank'>Blog</a>
+</li>
+<!-- %li -->
+<!-- %a{:href => "#{career_index_path}"} Career -->
+<li>
+<a href='../about.html'>About</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class='section noPad' id='footer'>
+<div class='call-action'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-5 col-center text-center'>
+<div class='valign'>
+<div class='center-text'>
+<h2>
+WHAT CAN WE DO TO HELP YOU?
+</h2>
+<p>
+Software is eating the world. Is your business prepared to ride the digital wave, or instead getting left behind? We will make sure you are prepared.
+</p>
+<a class='btn btn-outline' href='javascript:void(0)' id='contact-button'>
+CONTACT US
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='footer-link'>
+<div class='container'>
+<div class='mobile-new mobile-contacts'>
+<div class='content-overlay clearfix'>
+<div class='col-md-2'></div>
+<div class='col-md-2 pull-right'>
+<div class='clearfix'>
+<div class='col-md-12'></div>
+</div>
+</div>
+<div class='col-md-8'>
+<p>
+Do you have any questions? Are you ready to reduce cost and create new revenue?
+<br>
+Or you simply want to say hi? Drop us a message.
+</p>
+<form id="new_contact_form_2" class="new_contact_form_2" action="https://www.wgs.co.id/contact_forms" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><div id="another_address_hp_1576292511"><style type="text/css" media="screen" scoped="scoped">#another_address_hp_1576292511 { display:none; }</style><label for="another_address">Second Address</label><textarea name="another_address" id="another_address">
+</textarea></div><div id="ip_address_hp_1576292511"><style type="text/css" media="screen" scoped="scoped">#another_address_hp_1576292511, #ip_address_hp_1576292511 { display:none; }</style><label for="ip_address">IP Address</label><input type="text" name="ip_address" id="ip_address" /></div><div class='alert alert-danger' id='error_explanation_2' style='display:none;'>
+<!-- %a{href: "#", "aria-label" => "Close", "data-dismiss" => "alert"} x -->
+<ul id='mobile'>
+</ul>
+</div>
+<div class='alert alert-success' id='success_explanation_2' style='display:none;'>
+<!-- %a{href: "#", "aria-label" => "Close", "data-dismiss" => "alert"} x -->
+</div>
+<div class='clearfix row' id='hambada'>
+<div class='col-md-6'>
+<input placeholder="Name*" class="form-control require-input" id="contact_form_name_multi" type="text" name="contact_form[name]" />
+</div>
+<div class='col-md-6'>
+<input placeholder="E-mail*" class="form-control require-input" id="contact_form_email_multi" type="text" name="contact_form[email]" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-6'>
+<input placeholder="Phone*" class="form-control require-input" id="contact_form_phone_multi" type="text" name="contact_form[phone]" />
+</div>
+<div class='col-md-6'>
+<input placeholder="Skype" class="form-control require-input" id="contact_form_skype_multi" type="text" name="contact_form[skype]" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-12'>
+<textarea placeholder="How can we help you?*" class="form-control" id="contact_form_message_multi" name="contact_form[message]">
+</textarea>
+<div style='text-align:left;'>
+<input type="checkbox" name="newslatter_multi" id="newslatter_multi" value="1" checked="checked" />
+<label for="contact_form_Would you like to get WGS latest technology news update">Would you like to get wgs latest technology news update?</label>
+</div>
+<input value="Case Study - Komatsu: Drawing Management System for Heavy Equipment Manufacturer - Contact Us" id="contact_form_page_multi" type="hidden" name="contact_form[from_page]" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-4'>
+<div id='captcha-contact2'></div>
+</div>
+</div>
+<div class='clearfix'>
+<div class='pull-right'>
+<input type="submit" name="commit" value="Send Message" class="submit_message_2" data-disable-with="Sending Message..." />
+</div>
+</div>
+</form>
+<script src="../assets/contacts2-1616aa30e1c95958a6f206771198863e069e270c797a5c56eb11fad3887958fd.js" defer="defer"></script>
+
+</div>
+</div>
+</div>
+<a class='back-top' href='javascript:void(0)' id='back-to-top'>
+<i class='fa fa-angle-up'></i>
+</a>
+<div class='row'>
+<div class='col-md-9 text-left'>
+<a class='logo' href='../index.html'>
+<img alt='enterprise solution' src='../assets/logo/WGS-logo.png'>
+</a>
+<ul class='menu-footer'>
+<li>
+<a href="../case_studies.html">PORTFOLIOS</a>
+</li>
+<li>
+<a href="../services.html">SERVICES</a>
+</li>
+<li>
+<a href='javascript:void(0)' id='nav-icon3'>CONTACT</a>
+</li>
+<li>
+<a href='http://blog.wgs.co.id/' target='_blank'>BLOG</a>
+</li>
+<li>
+<a href="../about.html">ABOUT</a>
+</li>
+<li>
+<a href="../career.html">CAREER</a>
+</li>
+<li class='li-copy'>
+<p class='copyright'>
+Copyright ©2019 WGS. All Rights Reserved
+</p>
+</li>
+</ul>
+</div>
+<div class='col-md-3 text-left subscribe-box'>
+<p class='social'>
+Find Us on
+<a href='https://www.facebook.com/ptwgs' target='_blank'>
+<i class='fa fa-facebook'></i>
+</a>
+<a href='http://twitter.com/ptwgs' target='_blank'>
+<i class='fa fa-twitter'></i>
+</a>
+<a href='http://www.linkedin.com/company/pt-walden-global-services' target='_blank'>
+<i class='fa fa-linkedin'></i>
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class='overlay overlay-contentscale'>
+<div class='bg-gradient'></div>
+<button class='overlay-close' type='button'>Close</button>
+<div class='content-overlay clearfix'>
+<div class='col-md-2'>
+<a href='#'>
+<img alt='enterprise solution' src='../assets/logo/WGS-logo.png'>
+</a>
+</div>
+<div class='col-md-2 pull-right'>
+<div class='clearfix'>
+<div class='col-md-12'>
+<nav>
+<ul>
+<li>
+<a href='../index.html'>Home</a>
+</li>
+<li>
+<a href='../case_studies.html'>Portfolios</a>
+</li>
+<li>
+<a href='../services.html'>Services</a>
+</li>
+<li>
+<a href='http://blog.wgs.co.id/' target='_blank'>Blog</a>
+</li>
+<li>
+<a href='../about.html'>About</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class='col-md-8'>
+<p>
+Do you have any questions? Are you ready to reduce cost and create new revenue?
+<br>
+Or you simply want to say hi? Drop us a message.
+</p>
+<form class="new_contact_form" id="new_contact_form" action="https://www.wgs.co.id/contact_forms" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><div id="another_address_hp_1576292511"><style type="text/css" media="screen" scoped="scoped">#another_address_hp_1576292511 { display:none; }</style><label for="another_address">Second Address</label><input type="text" name="another_address" id="another_address" /></div><div id="ip_address_hp_1576292511"><style type="text/css" media="screen" scoped="scoped">#another_address_hp_1576292511, #ip_address_hp_1576292511 { display:none; }</style><label for="ip_address">IP Address</label><input type="text" name="ip_address" id="ip_address" /></div><div class='alert alert-danger' id='error_explanation' style='display:none;'>
+<!-- %a{href: "#", "aria-label" => "Close", "data-dismiss" => "alert"} x -->
+<ul id='desktop'>
+</ul>
+</div>
+<div class='alert alert-success' id='success_explanation' style='display:none;'>
+<!-- %a{href: "#", "aria-label" => "Close", "data-dismiss" => "alert"} x -->
+</div>
+<div class='clearfix row'>
+<div class='col-md-6'>
+<input placeholder="Name*" class="form-control require-input" type="text" name="contact_form[name]" id="contact_form_name" />
+</div>
+<div class='col-md-6'>
+<input placeholder="E-mail*" class="form-control require-input" type="text" name="contact_form[email]" id="contact_form_email" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-6'>
+<input placeholder="Phone*" class="form-control require-input" type="text" name="contact_form[phone]" id="contact_form_phone" />
+</div>
+<div class='col-md-6'>
+<input placeholder="Skype" class="form-control" type="text" name="contact_form[skype]" id="contact_form_skype" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-12'>
+<textarea placeholder="How can we help you?*" class="form-control require-input" name="contact_form[message]" id="contact_form_message">
+</textarea>
+<input type="checkbox" name="newslatter" id="newslatter" value="1" checked="checked" />
+<span>Would you like to get update on WGS tech news?</span>
+<input value="Case Study - Komatsu: Drawing Management System for Heavy Equipment Manufacturer - Contact Us" type="hidden" name="contact_form[from_page]" id="contact_form_from_page" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-4'>
+<div id='captcha-contact'></div>
+</div>
+</div>
+<div class='clearfix'>
+<div class='pull-right'>
+<input type="submit" name="commit" value="Send Message" class="submit_message" data-disable-with="Sending Message..." />
+</div>
+</div>
+</form>
+<script src="../assets/contacts-3b96b00cc9b3d72ba4932b8aea0c3068f68b822af457930219261f1a17700fc2.js" defer="defer"></script>
+
+<div class='row'>
+<div class='col-md-4'>
+<address>
+<i class='fa fa-map-marker'></i>
+Headquarter
+<br>
+<span>
+Jln. Soekarno Hatta No. 104<br/>Bandung, Indonesia, 40222
+<br>
+P:
++62 22 603 4882
+</span>
+</address>
+</div>
+<div class='col-md-4'>
+<address>
+<i class='fa fa-map-marker'></i>
+Sales Office
+<br>
+<span>
+Techpolitan<br/>The Breeze BSD City, Gedung Cinema<br/>Jln. Grand Boulevard<br/>Tangerang Selatan, Indonesia, 15345
+<br>
+P:
++62 21 2958 0058
+</span>
+</address>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+
+<script src="../assets/bootstrap.min-5f342c42fb2a1db7296d94bd0b385554ddf6af42b8615d95883d94e3e97bbb6a.js"></script>
+<script src="../assets/jquery.fullPage-b5929531c403e8445665f1c163421d0c77dcab8bfbe503afe93d96488ba87435.js"></script>
+<script src="../assets/jquery.lazyload-95f83f4f384bc479dcd9b2389530e188df12778f480f40a675bfbdcdca351655.js"></script>
+<script src="../assets/lazysizes.min-39cadf5eceb5deed5347143bad0779aa4b755b038b80317e9cdf8996ceffdc40.js" async="async"></script>
+<script defer='defer' src='../../www.google.com/recaptcha/api85f1.js?onload=onloadCallback&amp;render=explicit'></script>
+<script src="../assets/jQuery.WCircleMenu-aeb535688115252c535466113045ecc302d0be8e0583238cdf54d9420d6df040.js" defer="defer"></script>
+<script src="../assets/modernizr.custom-c1910ce41682bb8080e56e7b1ca02696cd915cee315983a1e4dfa0c30688758b.js" defer="defer"></script>
+<script src="../assets/animatedModal-17feb9568a0c9ade32d87147c550a3a1626ada4949d1864c0bdc05ca05e491b7.js" defer="defer"></script>
+<script src="../assets/app-7b4797d71f967a5e6765494ff52645920bd2f50fb930e6b16fd1416b498beb55.js" defer="defer"></script>
+<!-- = javascript_include_tag "page-inside" -->
+<script src="../assets/jquery.tmpl.min-db083c2db0b515cb94cb6cfca0e116915d692a44ea95938b11dfcd42792fc7c7.js" defer="defer"></script>
+<script src="../assets/jquery.kinetic-b475c1acb8394fd007850e1b25f84d8ed4c5f0aef58163d9ccb4eb55a5a61c33.js" defer="defer"></script>
+<script src="../assets/jquery.easing.1.3-de7de79b708968241d82f6aaa8992cfd985382cc0367e107be8958279840ac0d.js" defer="defer"></script>
+<script src="../assets/jquery.mousewheel-6e147adb3e5874b86e5e5feade7e8e63c4c55ac0282d4de42abd3d4e62cee234.js" defer="defer"></script>
+<script>
+  // fbq('track', 'ViewContent');
+</script>
+<script>
+  $('html, body').stop().animate({
+      scrollTop: $("#hambada").offset().top
+  }, 100);
+</script>
+
+</body>
+
+<!-- Mirrored from www.wgs.co.id/case_study/drawing-management-system-for-heavy-military-equipment-manufacturer by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 03:05:47 GMT -->
+</html>

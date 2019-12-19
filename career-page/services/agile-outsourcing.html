@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.wgs.co.id/services/agile-outsourcing by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 03:01:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c66b9c2997","applicationID":"196852246","transactionName":"e11fQxMNCA4HFhsXXUpEWFQEEUsDBQ1YAWdXR0VEDhcWAQsKUw==","queueTime":0,"applicationTime":2024,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"c66b9c2997",applicationID:"196852246"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Services - Extended Team - WGS</title>
+<meta name="description" content="Extended Team, Programmer outsourcing service, customer get the help of our experts as additional resource and has free reign over the project management with flexible spec." />
+<meta name="keywords" content="wgs, pt wgs, walden global services, pt walden global services, programmer outsourcing, software development, web development, mobile development, android app, iphone app, software outsourcing" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<link href='http://wgshub.co.id/' hreflang='id' rel='alternate'>
+<link rel="shortcut icon" type="image/x-icon" href="../assets/favicon-4d77e03290e2385b7235e68c3a73cfa1ebfdd16392e4ff97a8361352ea6cf996.ico" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="9+NPTAiVkXx1EpSjh5z/hiojxa9vkN5YrFcQpnLv9DmZKVxRlli+bSc07mbQCdaz2Z+CEpeJI0wen6cZKnHeCw==" />
+<link rel="stylesheet" media="all" href="../assets/font-awesome.min-149da43505d4a0bab3b6710d0ff86acd23d9a18e6907747c759cf8b6d967c2a3.css" />
+<link rel="stylesheet" media="all" href="../assets/jquery.fullPage-4bb2d232ae3be4726dcfa2a1883d801d780274f43284328a2d55f27ac88047c7.css" />
+<link rel="stylesheet" media="all" href="../assets/bootstrap-fbc36aa20585a190543ba1ee411ee48b75f462ca3cb92fb97f286a235e58cda3.css" />
+<link rel="stylesheet" media="all" href="../assets/animate-82457b578e5733e758467dfa20c0fcc9080eedaeee33e54c0ab990cdd4fc65ff.css" />
+<link rel="stylesheet" media="all" href="../assets/app-2499d5764e07817104ea9b0b7f65277589c2ecde7723a0437550e84613019c6d.css" />
+<link rel="stylesheet" media="screen" href="../assets/mobile-8de5b3d6971bbc5a922f099632564846de7936ee1ccb970f19ec67b9c732ea0c.css" />
+<script>
+  var verifyCallback = function(response) {
+    alert(response);
+  };
+  var widgetId1;
+  var widgetId2;
+  var onloadCallback = function() {
+    widgetId1 = grecaptcha.render('captcha-contact', {
+      'sitekey' : "6LeaHhQTAAAAAL8TqqLUlWS2T8xsLR_kNtm3vkCp",
+      'theme' : 'light'
+    });
+    widgetId2 = grecaptcha.render(document.getElementById('captcha-contact2'), {
+      'sitekey' : "6LeaHhQTAAAAAL8TqqLUlWS2T8xsLR_kNtm3vkCp"
+    });
+  };
+</script>
+
+<link rel="stylesheet" media="all" href="../assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+<script src="../assets/application-621d42acc022fcbdf3cee7476f795622db63b6004acdc2f4e0a242cc1802b729.js"></script>
+<script type='application/ld+json'>
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "http://www.wgs.co.id",
+"logo": "http://www.wgs.co.id/assets/wgs_logo.png"
+}
+</script>
+<script type='application/ld+json'>
+{
+"@context" : "http://schema.org",
+"@type" : "Organization",
+"name" : "WGS",
+"url" : "http://www.wgs.co.id",
+"sameAs" : [
+"https://www.facebook.com/ptwgs",
+"http://twitter.com/ptwgs",
+"http://www.linkedin.com/company/pt-walden-global-services"
+]
+}
+</script>
+<!-- Facebook Pixel Code -->
+<!-- End Facebook Pixel Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-53149145-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body>
+<div class='side-subscribe'>
+<div class='side-top'>
+What’s New With WGS
+<a class='closed desktop' href='javascript:void(0)'>
+<i class='fa fa-minus'></i>
+</a>
+<a class='closed mobile-tab' href='javascript:void(0)'>
+<i class='fa fa-remove'></i>
+</a>
+<a class='opened' href='javascript:void(0)'>
+<i class='fa fa-chevron-up'></i>
+</a>
+</div>
+<div class='side-content'>
+<form action='http://wgs.us13.list-manage.com/subscribe/post?u=bb0967f17fd19295fef21348d&amp;amp;id=eea754e0b2' id='form_newslatter' method='post' name='mc-embedded-subscribe-form' novalidate='' target='_tab'>
+<input name='nr' type='hidden' value='widget'>
+<input id='email_subscribe' name='EMAIL' placeholder='Your Email Address' type='email' value=''>
+<button class='btn' name='subscribe' type='submit'>Follow</button>
+</form>
+<a class='latest-news clearfix' href='https://blog.wgs.co.id/2019/09/what-is-customer-intelligence/' target='_blank'>
+<div class='col-md-4'>
+<img alt="image" class="img-news" src="../../blog.wgs.co.id/wp-content/uploads/2019/09/cellphone-1852898_1280-640x427.jpg">
+</div>
+<div class='col-md-8'>
+<h2>
+What is Customer Intelligence?
+</h2>
+<p>Customers these days prefer to share data concerning t...</p>
+</div>
+</a>
+<div class='social-follow'>
+<p>Follow us on social media</p>
+<p class='social'>
+<a href='https://www.facebook.com/ptwgs' target='_blank'>
+<i class='fa fa-facebook'></i>
+</a>
+<a href='http://twitter.com/ptwgs' target='_blank'>
+<i class='fa fa-twitter'></i>
+</a>
+<a href='http://www.linkedin.com/company/pt-walden-global-services' target='_blank'>
+<i class='fa fa-linkedin'></i>
+</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class='wrapper intro-effect-push' id='wrapper'>
+<div class='menu-mobile'>
+<div class='logo pull-left'>
+<a href='../index.html'>
+<img alt='enterprise solution' src='../assets/logo/WGS-logo.png'>
+</a>
+</div>
+<div class='menu-fixed pull-right'>
+<button id='nav-icon2' type='button'>
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+
+<div class='inside agile fixed-bid inside-top' id='section-hero'>
+<div class='cd-background-wrapper'>
+<div class='container'>
+<div class='row'>
+<div class='top-head'>
+<div class='logo pull-left'>
+<a href='../index.html'>
+<img alt='enterprise solutions' src='../assets/logo/WGS-logo.png'>
+</a>
+</div>
+<div class='mobile-nav-icon'>
+<i class='fa fa-bars'></i>
+</div>
+
+</div>
+<div class='headline-top'>
+<h2>
+Programmer Outsourcing Service
+</h2>
+<p>
+Business process outsourcing, no need to spend more than you have to. Focus on your project and let us handle the rest.
+</p>
+</div>
+<div id='menu_icon'>
+<div class='wcircle-icon'>
+<div>
+<div class='open' id='nav-icon1'>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+<div class='wcircle-menu' style='display:none;'>
+<div class='wcircle-menu-item'>
+<a href="../about.html">About</a>
+<i class='fa fa-genderless'></i>
+</div>
+<div class='wcircle-menu-item'>
+<a target="_blank" href="http://blog.wgs.co.id/">Blog</a>
+<i class='fa fa-genderless'></i>
+</div>
+<!-- .wcircle-menu-item -->
+<!-- %a#contact-menu{:href => "javascript:void(0)"} Contact -->
+<!-- %i.fa.fa-genderless -->
+<!-- .wcircle-menu-item -->
+<!-- = link_to 'Career', career_index_path -->
+<!-- %i.fa.fa-genderless -->
+<div class='wcircle-menu-item'>
+<a href='javascript:void(0)' id='contact-menu'>Contact</a>
+<i class='fa fa-genderless'></i>
+</div>
+<div class='wcircle-menu-item'>
+<a href="../services.html">Services</a>
+<i class='fa fa-genderless'></i>
+</div>
+<!-- .wcircle-menu-item -->
+<!-- = link_to "Products", 'http://wgshub.com' -->
+<!-- %i.fa.fa-genderless -->
+<div class='wcircle-menu-item'>
+<a href="../case_studies.html">Portfolios</a>
+<i class='fa fa-genderless'></i>
+</div>
+<div class='wcircle-menu-item active'>
+<a href="../index.html">Home</a>
+<i class='fa fa-genderless'></i>
+</div>
+</div>
+</div>
+
+<!-- .arrow.bounce -->
+<!-- %i.fa.fa-angle-down.trigger-btn -->
+<div class='bottom-head'>
+<div class='col-md-6 text-left'>
+<a class='desktop' href='javascript:void(0)' id='nav-icon'>Contact Us</a>
+<a class='mobile-tab' href='javascript:void(0)' id='nav-icon'>Contact Us</a>
+|
+<a href='../career.html'>Career</a>
+<!--  -->
+<!-- %a{:href => ""} WGS Digital Camp -->
+</div>
+<div class='col-md-6 text-right'>
+<p>
+Find Us on
+<a href='https://www.facebook.com/ptwgs' target='_blank'>
+<i class='fa fa-facebook'></i>
+</a>
+<a href='http://twitter.com/ptwgs' target='_blank'>
+<i class='fa fa-twitter'></i>
+</a>
+<a href='http://www.linkedin.com/company/pt-walden-global-services' target='_blank'>
+<i class='fa fa-linkedin'></i>
+</a>
+</p>
+</div>
+</div>
+
+
+</div>
+</div>
+<div class='bg-gradient'></div>
+<figure class='cd-floating-background'>
+<!-- %img{alt: "Image", src: "/assets/bg.jpg"} -->
+<img alt="image" src="../assets/logo/loading.gif" data-original="../assets/bg-44214b1285e2ca43d2d8c2cd8027b1024d252dd5c339e67663a81e5d97f78eec.jpg">
+</figure>
+</div>
+</div>
+<div class='mobile-new affix-top' id='nav-new'>
+<a class='close-mobile' href='javascript:void(0)'>
+<i class='fa fa-remove'></i>
+</a>
+<div class='navbar navbar-default navbar-static'>
+<div class='container'>
+<ul>
+<li>
+<a href='../index.html'>Home</a>
+</li>
+<li>
+<a href='../case_studies.html'>Portfolios</a>
+</li>
+<li>
+<a href='../services.html'>Services</a>
+</li>
+<li>
+<a href='javascript:void(0)' id='go-to-contact'>Contact</a>
+</li>
+<li>
+<a href='http://blog.wgs.co.id/' target='_blank'>Blog</a>
+</li>
+<!-- %li -->
+<!-- %a{:href => "#{career_index_path}"} Career -->
+<li>
+<a href='../about.html'>About</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class='career-page fixedbid-page noPad inside-bottom'>
+<div class='inside-scroll'>
+<div class='service-center wow slideUp'>
+<h2>
+Scale Up Your Team
+</h2>
+<p>
+On Extended Team Service, customer get the help from our experts as additional resource and has free reign over the project management with flexible spec.
+</p>
+<div class='container text-center'>
+<h4>
+This sevice is offered to help with:
+</h4>
+<div class='col-md-4'>
+<!-- %img{src: "/assets/laptop_03.png"} -->
+<img src="../assets/logo/loading.gif" alt="Laptop 03 fd2c97ec59b444450804c672cba71da05fb7b3c5410ac93ecee0fadac6adde2a" data-original="../assets/laptop_03-fd2c97ec59b444450804c672cba71da05fb7b3c5410ac93ecee0fadac6adde2a.png">
+<h5>
+Continuing existing project
+</h5>
+</div>
+<div class='col-md-4'>
+<!-- %img{src: "/assets/employees.png"} -->
+<img src="../assets/logo/loading.gif" alt="Employees 741177ba7ffe6417d2d55b5c8e0757f575346def711236e03b534a5d942f6b11" data-original="../assets/employees-741177ba7ffe6417d2d55b5c8e0757f575346def711236e03b534a5d942f6b11.png">
+<h5>
+Joint development
+</h5>
+</div>
+<div class='col-md-4'>
+<!-- %img{src: "/assets/graphic-design.png"} -->
+<img src="../assets/logo/loading.gif" alt="Graphic design af30a65b969597c0eeff7a7db969fd03ef9d7d15017941ca5649504cfe3990ce" data-original="../assets/graphic-design-af30a65b969597c0eeff7a7db969fd03ef9d7d15017941ca5649504cfe3990ce.png">
+<h5>
+Re-factoring
+</h5>
+</div>
+</div>
+</div>
+<div class='container clearfix'>
+<div class='col-md-10 col-center resource-type clearfix'>
+<h5>
+Resource Type:
+</h5>
+<div class='col-md-3'>
+<div class='box-resource'>
+<!-- %img{src: "/assets/browser.png"} -->
+<img src="../assets/logo/loading.gif" alt="Browser b8497822f7d2b0fa2ad60e90b70318275f30bcbf6ef2036599b9f177cac75dd3" data-original="../assets/browser-b8497822f7d2b0fa2ad60e90b70318275f30bcbf6ef2036599b9f177cac75dd3.png">
+<br>
+<h4>
+Front-End Developer
+</h4>
+</div>
+</div>
+<div class='col-md-3'>
+<div class='box-resource'>
+<!-- %img{src: "/assets/programing.png"} -->
+<img src="../assets/logo/loading.gif" alt="Programing 70c22f8a4d60744eb9a82b912eacc8e6aed74f20ea417f4ae66ae5f4903f77dd" data-original="../assets/programing-70c22f8a4d60744eb9a82b912eacc8e6aed74f20ea417f4ae66ae5f4903f77dd.png">
+<br>
+<h4>
+Back-End Developer
+</h4>
+</div>
+</div>
+<div class='col-md-3'>
+<div class='box-resource'>
+<!-- %img{src: "/assets/development-icons.png"} -->
+<img src="../assets/logo/loading.gif" alt="Development icons 3a6f5cf0bc5246cd36d2e3de214ad9b95abae6be1f4fe40cebcad50dac2eca9f" data-original="../assets/development-icons-3a6f5cf0bc5246cd36d2e3de214ad9b95abae6be1f4fe40cebcad50dac2eca9f.png">
+<br>
+<h4>
+Mobile Developer
+</h4>
+</div>
+</div>
+<div class='col-md-3'>
+<div class='box-resource'>
+<!-- %img{src: "/assets/graphic-tool.png"} -->
+<img src="../assets/logo/loading.gif" alt="Graphic tool a3f11f6a9900afbfa38dd7fb72d198ca76be0bf97526bedbf072059cf34f9846" data-original="../assets/graphic-tool-a3f11f6a9900afbfa38dd7fb72d198ca76be0bf97526bedbf072059cf34f9846.png">
+<br>
+<h4>
+Designer
+</h4>
+</div>
+</div>
+<div class='col-md-3'>
+<div class='box-resource'>
+<!-- %img{src: "/assets/professor-consultation.png"} -->
+<img src="../assets/logo/loading.gif" alt="Professor consultation 9c44bbf2dcd56d541d10c6d7e0c240e05182467ec1a5be2867fb9a17eb500e9f" data-original="../assets/professor-consultation-9c44bbf2dcd56d541d10c6d7e0c240e05182467ec1a5be2867fb9a17eb500e9f.png">
+<br>
+<h4>
+Project Coordinator
+</h4>
+</div>
+</div>
+<div class='col-md-3'>
+<div class='box-resource'>
+<!-- %img{src: "/assets/manager.png"} -->
+<img src="../assets/logo/loading.gif" alt="Manager b2a7f3af45e8856dfef542b1e5616ed2b3c6e3642d07a2fc73aad5745e7f03e3" data-original="../assets/manager-b2a7f3af45e8856dfef542b1e5616ed2b3c6e3642d07a2fc73aad5745e7f03e3.png">
+<br>
+<h4>
+Engineering Manager
+</h4>
+</div>
+</div>
+<div class='col-md-3'>
+<div class='box-resource'>
+<!-- %img{src: "/assets/search.png"} -->
+<img src="../assets/logo/loading.gif" alt="Search de8bfa7172cd6aefc1da38b50d467eabbcb2d1309c182c071ee734baf78d1f84" data-original="../assets/search-de8bfa7172cd6aefc1da38b50d467eabbcb2d1309c182c071ee734baf78d1f84.png">
+<br>
+<h4>
+QA Officer
+</h4>
+</div>
+</div>
+<div class='col-md-3'>
+<div class='box-resource'>
+<!-- %img{src: "/assets/user.png"} -->
+<img src="../assets/logo/loading.gif" alt="User 9459d3e1c14ffa8aa4ca8c3f93cacdfbc73cdf941dfcd57992d78579412d5e3d" data-original="../assets/user-9459d3e1c14ffa8aa4ca8c3f93cacdfbc73cdf941dfcd57992d78579412d5e3d.png">
+<br>
+<h4>
+System Admin
+</h4>
+</div>
+</div>
+</div>
+</div>
+<div class='row service-01 clearfix how-to wow fadeInUp'>
+<div class='col-md-6 text-center col-center'>
+<h2>
+Advantages of Extended Team Service
+</h2>
+<br>
+<br>
+<!-- %p -->
+<!-- We are eager to hear your story, what's keeping you up at night, your ideas and vision, and how we can help. We will dig the requirements. -->
+</div>
+</div>
+<div class='row service-01 clearfix'>
+<div class='col-md-6 wow fadeInLeft'>
+<div>
+<!-- %img{src: "/assets/extendeed-02.jpg"} -->
+<img src="../assets/logo/loading.gif" alt="Extendeed 02 110f25ddd088d9add5e4891ad6f6f8fe7b30b868a99d1339ed30971858667ce1" data-original="../assets/extendeed-02-110f25ddd088d9add5e4891ad6f6f8fe7b30b868a99d1339ed30971858667ce1.jpg">
+</div>
+</div>
+<div class='col-md-6 text-right wow fadeInRight'>
+<h2>
+<span>
+01.
+</span>
+Ensured Project Continuity
+</h2>
+<p>
+Most programmers rarely stay for many years, and the attrition creates unnecessary headache. We will help your project with a good programmer, with no risk of attrition and other common human resource problem. Our company solid growth track also ensures sustainability.
+</p>
+</div>
+</div>
+<div class='row service-01 clearfix' id='agile-service'>
+<div class='col-md-6 text-right wow fadeInLeft'>
+<h2>
+<span>
+02.
+</span>
+Technical Support
+</h2>
+<p>
+We have a large community of 130+ developers that turned into a forum to help solve customer's business problem. We strive to allow tech-enabled innovation to happen.
+</p>
+</div>
+<div class='col-md-6 wow fadeInRight'>
+<div>
+<!-- %img{src: "/assets/extendeed-01.jpg"} -->
+<img src="../assets/logo/loading.gif" alt="Extendeed 01 fb06893c95ca3767ea1c30c08fdebccdd610fc99e7e3ec7b443a7e9d7c25e4d4" data-original="../assets/extendeed-01-fb06893c95ca3767ea1c30c08fdebccdd610fc99e7e3ec7b443a7e9d7c25e4d4.jpg">
+</div>
+</div>
+</div>
+<div class='row service-01 clearfix'>
+<div class='col-md-6 wow fadeInLeft'>
+<div>
+<!-- %img{src: "/assets/extendeed-03.jpg"} -->
+<img src="../assets/logo/loading.gif" alt="Extendeed 03 388178bce0d14882c6ab8ed73e7cd3079d9d4b9bdd9f34a305f83ae899976b7c" data-original="../assets/extendeed-03-388178bce0d14882c6ab8ed73e7cd3079d9d4b9bdd9f34a305f83ae899976b7c.jpg">
+</div>
+</div>
+<div class='col-md-6 text-right wow fadeInLeft'>
+<h2>
+<span>
+03.
+</span>
+Best-Practice Software Engineering
+</h2>
+<p>
+We applied our technology expertise & experience with standardized quality, regardless of assignee. Proven to surpass technical expectation of Western tech companies. Here's an overview of our standard:
+</p>
+<ul class='listed'>
+<li>Automated test script</li>
+<li>Browser compatibility check</li>
+<li>Repository server</li>
+<li>Project management tools</li>
+<li>Performance and scalability</li>
+<li>Security.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='section noPad' id='footer'>
+<section class='showcase' id='contact'>
+<div class='showcase-wrap'>
+<div class='container'>
+<div class='row wp2'>
+<div class='col-md-12 text-center'>
+<h1 class='animated fadeInDown'>
+Start Your Tech Enabled Innovation!
+</h1>
+<p class='animated fadeInDown'>
+Software is eating the world. Is your business prepared to ride the digital wave, or instead getting left behind? We will make sure you are prepared.
+</p>
+<form class="animated fadeInDown" id="new_consultation_form" action="https://www.wgs.co.id/consultation_forms" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><div id="another_address_hp_1576292439"><style type="text/css" media="screen" scoped="scoped">#another_address_hp_1576292439 { display:none; }</style><label for="another_address">Second Address</label><input type="text" name="another_address" id="another_address" /></div><div id="ip_address_hp_1576292439"><style type="text/css" media="screen" scoped="scoped">#another_address_hp_1576292439, #ip_address_hp_1576292439 { display:none; }</style><label for="ip_address">IP Address</label><input type="text" name="ip_address" id="ip_address" /></div><div class='alert alert-danger' id='error_explanation3' style='display:none;'>
+<!-- %a{href: "#", "aria-label" => "Close", "data-dismiss" => "alert"} x -->
+<ul>
+</ul>
+</div>
+<div class='alert alert-success' id='success_explanation3' style='display:none;'>
+<!-- %a{href: "#", "aria-label" => "Close", "data-dismiss" => "alert"} x -->
+</div>
+<div class='row'>
+<div class='col-xs-12 col-sm-6 col-md-6'>
+<div class='form-group'>
+<div class='input-group'>
+<div class='input-group-addon'>
+<i class='fa fa-user fa-lg'></i>
+</div>
+<input placeholder="Name*" class="form-control input-lg" type="text" name="consultation_form[name]" id="consultation_form_name" />
+</div>
+</div>
+</div>
+<div class='col-xs-12 col-sm-6 col-md-6'>
+<div class='form-group'>
+<div class='input-group'>
+<div class='input-group-addon'>
+<i class='fa fa-envelope fa-lg'></i>
+</div>
+<input placeholder="Email*" class="form-control input-lg" type="email" name="consultation_form[email]" id="consultation_form_email" />
+</div>
+</div>
+</div>
+<div class='col-xs-12 col-sm-6 col-md-6'>
+<div class='form-group'>
+<div class='input-group'>
+<div class='input-group-addon'>
+<i class='fa fa-phone fa-lg'></i>
+</div>
+<input placeholder="Phone Number*" required="required" class="form-control input-lg" type="text" name="consultation_form[phone]" id="consultation_form_phone" />
+</div>
+</div>
+</div>
+<div class='col-xs-12 col-sm-6 col-md-6'>
+<div class='form-group'>
+<div class='input-group'>
+<div class='input-group-addon'>
+<i class='fa fa-group fa-lg'></i>
+</div>
+<input placeholder="Company" class="form-control input-lg" type="text" name="consultation_form[company_name]" id="consultation_form_company_name" />
+<input value="Service - Agile Outsourcing" type="hidden" name="consultation_form[from_page]" id="consultation_form_from_page" />
+</div>
+</div>
+</div>
+</div>
+<div class='form-group'>
+<textarea placeholder="How can we help you?*" rows="6" class="form-control input-lg" name="consultation_form[message]" id="consultation_form_message">
+</textarea>
+</div>
+<input type="submit" name="commit" value="Scale Up Your Team" class="submit_message3 btn form-btn btn-block" />
+<script src="../assets/project_consultation-9d7d5183bac4f8d3daa7d90eb37b50491d3b1212f06c070d2e4ef5d82552071d.js" defer="defer"></script>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class='footer-link'>
+<div class='container'>
+<!-- .mobile-new.mobile-contacts -->
+<!-- .content-overlay.clearfix -->
+<!-- .col-md-2 -->
+<!-- .col-md-2.pull-right -->
+<!-- .clearfix -->
+<!-- .col-md-12 -->
+<!-- .col-md-8 -->
+<!-- %p -->
+<!-- Do you have any questions? Are you ready to reduce cost and create new revenue? -->
+<!-- %br/ -->
+<!-- Or you simply want to say hi? Drop us a message. -->
+<!-- = render 'contacts/contact_form_multiple_captcha' -->
+<a class='back-top' href='javascript:void(0)' id='back-to-top'>
+<i class='fa fa-angle-up'></i>
+</a>
+<div class='row'>
+<div class='col-md-3'>
+<address>
+<i class='fa fa-map-marker'></i>
+Headquarter
+<br>
+<span>
+Jln. Soekarno Hatta No. 104<br/>Bandung, Indonesia, 40222
+<br>
+<span>
+P:
++62 22 603 4882
+</span>
+</span>
+</address>
+</div>
+<div class='col-md-3'>
+<address>
+<i class='fa fa-map-marker'></i>
+Sales Office
+<br>
+<span>
+Techpolitan<br/>The Breeze BSD City, Gedung Cinema<br/>Jln. Grand Boulevard<br/>Tangerang Selatan, Indonesia, 15345
+<br>
+<span>
+P:
++62 21 2958 0058
+</span>
+</span>
+</address>
+</div>
+<div class='col-md-3'>
+<img alt='iso' src='../assets/iso.jpg' style='height:120px;'>
+</div>
+<div class='col-md-3 text-left'>
+<div class='become-wegeeks'>
+<h5 class='no-margin-top'>CAREER</h5>
+<a class='btn btn-outline on-footer' href='../career.html'>BECOME A WEGEEKS</a>
+</div>
+</div>
+</div>
+<hr>
+<div class='row'>
+<div class='col-md-9 text-left'>
+<a class='logo' href='../index.html'>
+<img alt='enterprise solution' src='../assets/logo/WGS-logo.png'>
+</a>
+<ul class='menu-footer'>
+<li>
+<a href="../about.html">ABOUT</a>
+</li>
+<!-- %li -->
+<!-- = link_to "PRODUCTS", products_path -->
+<li>
+<a href="../services.html">SERVICES</a>
+</li>
+<li>
+<a href="../case_studies.html">PORTFOLIO</a>
+</li>
+<li>
+<a href='http://blog.wgs.co.id/' target='_blank'>BLOG</a>
+</li>
+<li>
+<a href='javascript:void(0)' id='nav-icon3'>CONTACT</a>
+</li>
+<li class='li-copy'>
+<p class='copyright'>
+Copyright ©2019 WGS. All Rights Reserved
+</p>
+</li>
+</ul>
+</div>
+<div class='col-md-3 text-left subscribe-box'>
+<p class='social'>
+Find Us on
+<a href='https://www.facebook.com/ptwgs' target='_blank'>
+<i class='fa fa-facebook'></i>
+</a>
+<a href='http://twitter.com/ptwgs' target='_blank'>
+<i class='fa fa-twitter'></i>
+</a>
+<a href='http://www.linkedin.com/company/pt-walden-global-services' target='_blank'>
+<i class='fa fa-linkedin'></i>
+</a>
+</p>
+</div>
+<!-- .col-md-3.text-left -->
+<!-- %a.logo{:href => "#{root_path}"} -->
+<!-- %img{:src => "/assets/logo/WGS-logo.png", alt: "enterprise solution"}/ -->
+<!-- .col-md-3 -->
+<!-- %address -->
+<!-- = link_to "ABOUT", about_index_path -->
+<!-- %br/ -->
+<!-- = link_to "PRODUCTS", products_path -->
+<!-- %br/ -->
+<!-- = link_to 'SERVICES', services_path -->
+<!-- %br/ -->
+<!-- = link_to "PORTFOLIO", case_studies_path -->
+<!-- %br/ -->
+<!-- %a{:href => "http://blog.wgs.co.id", :target => "_blank"} BLOG -->
+<!-- %br/ -->
+<!-- %a#nav-icon3{:href=>"javascript:void(0)"} CONTACT -->
+<!-- .col-md-3.text-left -->
+<!-- %h5 CAREER -->
+<!-- %a.btn.btn-outline{:href => "#{career_index_path}"} BECOME A WEGEEKS -->
+<!-- / %a.btn.btn-outline{:href => ""} WGS DIGITAL CAMP -->
+<!-- .col-md-3.text-left.subscribe-box -->
+<!-- %h5 Subscribe to our newsletter -->
+<!-- %p Latest headlines delivered to you -->
+<!-- %form#mc-embedded-subscribe-form.validate{:action => "//wgs.us13.list-manage.com/subscribe/post?u=bb0967f17fd19295fef21348d&amp;id=e2dd4ca5df", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"} -->
+<!-- %input{:name => "nr", :type => "hidden", :value => "widget"}/ -->
+<!-- %input#mce-EMAIL.required.email.newsletter-email{:name => "EMAIL", :placeholder => "Your email address", :type => "email", :value => ""}/ -->
+<!-- %button#mc-embedded-subscribe.btn.btn-outline{:name => "subscribe", :type => "submit"} SUBSCRIBE -->
+<!-- #mce-responses -->
+<!-- #mce-error-response.response{:style => "display:none"} -->
+<!-- #mce-success-response.response{:style => "display:none"} -->
+<!-- %div{"aria-hidden" => "true", :style => "position: absolute; left: -5000px;"} -->
+<!-- %input{:name => "b_a6f32f74528bcb8f72f9bd9b0_537afa235e", :tabindex => "-1", :type => "text", :value => ""}/ -->
+<!-- .clear -->
+<!-- .col-md-6 -->
+<!-- %p.copyright -->
+<!-- = "Copyright ©#{Time.now.year} WGS. All Rights Reserved" -->
+<!-- .col-md-6 -->
+<!-- %p.social -->
+<!-- Find Us on -->
+<!-- %a{:href => "https://www.facebook.com/ptwgs" , :target => "_blank"} -->
+<!-- %i.fa.fa-facebook -->
+<!-- %a{:href => "http://twitter.com/ptwgs", :target => "_blank"} -->
+<!-- %i.fa.fa-twitter -->
+<!-- %a{:href => "http://www.linkedin.com/company/pt-walden-global-services", :target => "_blank"} -->
+<!-- %i.fa.fa-linkedin -->
+</div>
+</div>
+</div>
+</div>
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $("#back-to-top").click(function() { -->
+<!-- $('html, body').animate({ -->
+<!-- scrollTop: $("#section-hero").offset().top -->
+<!-- }, 1000); -->
+<!-- }); -->
+<!-- }); -->
+
+</div>
+<div class='overlay overlay-contentscale'>
+<div class='bg-gradient'></div>
+<button class='overlay-close' type='button'>Close</button>
+<div class='content-overlay clearfix'>
+<div class='col-md-2'>
+<a href='#'>
+<img alt='enterprise solution' src='../assets/logo/WGS-logo.png'>
+</a>
+</div>
+<div class='col-md-2 pull-right'>
+<div class='clearfix'>
+<div class='col-md-12'>
+<nav>
+<ul>
+<li>
+<a href='../index.html'>Home</a>
+</li>
+<li>
+<a href='../case_studies.html'>Portfolios</a>
+</li>
+<li>
+<a href='../services.html'>Services</a>
+</li>
+<li>
+<a href='http://blog.wgs.co.id/' target='_blank'>Blog</a>
+</li>
+<li>
+<a href='../about.html'>About</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class='col-md-8'>
+<p>
+Do you have any questions? Are you ready to reduce cost and create new revenue?
+<br>
+Or you simply want to say hi? Drop us a message.
+</p>
+<form class="new_contact_form" id="new_contact_form" action="https://www.wgs.co.id/contact_forms" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><div id="another_address_hp_1576292439"><style type="text/css" media="screen" scoped="scoped">#another_address_hp_1576292439 { display:none; }</style><label for="another_address">Second Address</label><textarea name="another_address" id="another_address">
+</textarea></div><div id="ip_address_hp_1576292439"><style type="text/css" media="screen" scoped="scoped">#another_address_hp_1576292439, #ip_address_hp_1576292439 { display:none; }</style><label for="ip_address">IP Address</label><input type="text" name="ip_address" id="ip_address" /></div><div class='alert alert-danger' id='error_explanation' style='display:none;'>
+<!-- %a{href: "#", "aria-label" => "Close", "data-dismiss" => "alert"} x -->
+<ul id='desktop'>
+</ul>
+</div>
+<div class='alert alert-success' id='success_explanation' style='display:none;'>
+<!-- %a{href: "#", "aria-label" => "Close", "data-dismiss" => "alert"} x -->
+</div>
+<div class='clearfix row'>
+<div class='col-md-6'>
+<input placeholder="Name*" class="form-control require-input" type="text" name="contact_form[name]" id="contact_form_name" />
+</div>
+<div class='col-md-6'>
+<input placeholder="E-mail*" class="form-control require-input" type="text" name="contact_form[email]" id="contact_form_email" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-6'>
+<input placeholder="Phone*" class="form-control require-input" type="text" name="contact_form[phone]" id="contact_form_phone" />
+</div>
+<div class='col-md-6'>
+<input placeholder="Skype" class="form-control" type="text" name="contact_form[skype]" id="contact_form_skype" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-12'>
+<textarea placeholder="How can we help you?*" class="form-control require-input" name="contact_form[message]" id="contact_form_message">
+</textarea>
+<input type="checkbox" name="newslatter" id="newslatter" value="1" checked="checked" />
+<span>Would you like to get update on WGS tech news?</span>
+<input value="Service - Agile Outsourcing" type="hidden" name="contact_form[from_page]" id="contact_form_from_page" />
+</div>
+</div>
+<div class='clearfix row'>
+<div class='col-md-4'>
+<div id='captcha-contact'></div>
+</div>
+</div>
+<div class='clearfix'>
+<div class='pull-right'>
+<input type="submit" name="commit" value="Send Message" class="submit_message" data-disable-with="Sending Message..." />
+</div>
+</div>
+</form>
+<script src="../assets/contacts-3b96b00cc9b3d72ba4932b8aea0c3068f68b822af457930219261f1a17700fc2.js" defer="defer"></script>
+
+<div class='row'>
+<div class='col-md-4'>
+<address>
+<i class='fa fa-map-marker'></i>
+Headquarter
+<br>
+<span>
+Jln. Soekarno Hatta No. 104<br/>Bandung, Indonesia, 40222
+<br>
+P:
++62 22 603 4882
+</span>
+</address>
+</div>
+<div class='col-md-4'>
+<address>
+<i class='fa fa-map-marker'></i>
+Sales Office
+<br>
+<span>
+Techpolitan<br/>The Breeze BSD City, Gedung Cinema<br/>Jln. Grand Boulevard<br/>Tangerang Selatan, Indonesia, 15345
+<br>
+P:
++62 21 2958 0058
+</span>
+</address>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="../assets/bootstrap.min-5f342c42fb2a1db7296d94bd0b385554ddf6af42b8615d95883d94e3e97bbb6a.js"></script>
+<script src="../assets/jquery.fullPage-b5929531c403e8445665f1c163421d0c77dcab8bfbe503afe93d96488ba87435.js"></script>
+<script src="../assets/jquery.lazyload-95f83f4f384bc479dcd9b2389530e188df12778f480f40a675bfbdcdca351655.js"></script>
+<script src="../assets/lazysizes.min-39cadf5eceb5deed5347143bad0779aa4b755b038b80317e9cdf8996ceffdc40.js" async="async"></script>
+<script defer='defer' src='../../www.google.com/recaptcha/api85f1.js?onload=onloadCallback&amp;render=explicit'></script>
+<script src="../assets/jQuery.WCircleMenu-aeb535688115252c535466113045ecc302d0be8e0583238cdf54d9420d6df040.js" defer="defer"></script>
+<script src="../assets/modernizr.custom-c1910ce41682bb8080e56e7b1ca02696cd915cee315983a1e4dfa0c30688758b.js" defer="defer"></script>
+<script src="../assets/animatedModal-17feb9568a0c9ade32d87147c550a3a1626ada4949d1864c0bdc05ca05e491b7.js" defer="defer"></script>
+<script src="../assets/app-7b4797d71f967a5e6765494ff52645920bd2f50fb930e6b16fd1416b498beb55.js" defer="defer"></script>
+<script src="../assets/wow.min-55811a9413dc8898110a3103659bb3777a44d863b7ede8c24c93c9b028b958aa.js" defer="defer"></script>
+<!-- = javascript_include_tag "page-inside" -->
+<script src="../assets/career-a53b4255066af77197a785c5fd32f25186cbba1b3eb9dca29788677fd83ad53b.js" defer="defer"></script>
+<script src="../assets/fixed_bid-0746f6e4cc3d60eb72af258508c3425824a3787b02c5d7850c5e5241072289af.js" defer="defer"></script>
+<script>
+  function NewDesign() {
+    var windowWidth = $(window).width();
+  
+    if (windowWidth <= 800) {
+      $('#nav-new').affix({
+        offset: {
+          top: $('#section-hero').height()
+        }
+      });
+  
+      $('.carousel').carousel();
+    }
+  }
+  NewDesign();
+  $(window).bind("load", NewDesign);
+  $(window).bind("resize", NewDesign);
+  $(window).bind("orientationchange", NewDesign);
+  
+  / fbq('track', 'ViewContent');
+</script>
+
+</body>
+
+<!-- Mirrored from www.wgs.co.id/services/agile-outsourcing by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 03:01:18 GMT -->
+</html>
